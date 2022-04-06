@@ -6,9 +6,8 @@ import { BrowserRouter, Routes as Switch, Route /* Navigate */ } from 'react-rou
 // https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
 
 import Home from './pages/Home'
-// import Product from './pages/Products/ProductDetail'
-// import Products from './pages/Products/ProductsCheckout'
 import LogIn from './pages/Login'
+import Signup from './pages/Signup'
 // import ForgotPassword from './pages/ForgotPassword'
 // import VerificationPage from './pages/VerificationPage'
 // import ResetPassword from './pages/ResetPassword'
@@ -22,6 +21,7 @@ const Routes = () => (
       <Switch>
         {<Route path="/" element={<Home />} /> }
         <Route path="/login" element={<LogIn />} />
+        <Route path="/signup" element={<Signup />} />
         {/* <Route path="/signup" element={<Signup />} />
       <Route path="/editprofile" element={<EditProfile />} /> */}
         {/* <Route path="*" element={<Navigate to ="/" />}/> */}
